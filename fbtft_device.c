@@ -865,6 +865,23 @@ static struct fbtft_device_display displays[] = {
 			}
 		}
 	}, {
+		.name = "seps114a",
+		.spi = &(struct spi_board_info) {
+			.modalias = "fb_seps114a",
+			.max_speed_hz = 3000000,
+			.mode = SPI_MODE_0,
+			.platform_data = &(struct fbtft_platform_data) {
+				.display = {
+					.buswidth = 8,
+				},
+				.gpios = (const struct fbtft_gpio []) {
+					{ "reset", 24 },
+					{ "dc", 25 },
+					{},
+				},
+			}
+		}
+	}, {
 		.name = "tinylcd35",
 		.spi = &(struct spi_board_info) {
 			.modalias = "fb_tinylcd",

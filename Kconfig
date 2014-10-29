@@ -140,6 +140,12 @@ config FB_TFT_UPD161704
 	help
 	  Generic Framebuffer support for uPD161704
 
+config FB_TFT_SEPS114A
+	tristate "FB driver for the SEPS114A LCD Controller"
+	depends on FB_TFT
+	help
+	  Generic Framebuffer support for SEPS114A
+
 config FB_TFT_WATTEROTT
 	tristate "FB driver for the WATTEROTT LCD Controller"
 	depends on FB_TFT

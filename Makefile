@@ -32,6 +32,7 @@ obj-$(CONFIG_FB_TFT_TINYLCD)     += fb_tinylcd.o
 obj-$(CONFIG_FB_TFT_TLS8204)     += fb_tls8204.o
 obj-$(CONFIG_FB_TFT_UPD161704)   += fb_upd161704.o
 obj-$(CONFIG_FB_TFT_WATTEROTT)   += fb_watterott.o
+obj-$(CONFIG_FB_TFT_SEPS114A)   += fb_seps114a.o
 obj-$(CONFIG_FB_FLEX)            += flexfb.o
 
 # Device modules
